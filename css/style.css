@@ -72,20 +72,20 @@ select {
 }
 
 .heder-container {
-  width: 1440px;
+  width: 100%;
   height: 930px;
   position: relative;
   overflow: hidden;
 }
 
-.heder-container__right {
+.heder-container__left-bg {
   position: absolute;
   top: 0;
   left: 0;
-  width: 80%;
+  width: 76.39%;
   height: 80%;
-  background-color: blue;
-  border-radius: 0px 0px 1000px 0px;
+  background-color: #1C57C9;
+  border-radius: 0px 0px 460px 0px;
 }
 
 .heder-container__bg-blue {
@@ -111,13 +111,42 @@ select {
 
 .header {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 20px;
+  left: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 100%;
+  height: 74px;
   z-index: 5;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 167px;
+  height: 42px;
+}
+
+.logo__picture {
+  display: block;
+  width: 42px;
+  height: 42px;
+}
+
+.logo__text {
+  width: 113px;
+  height: 24px;
 }
