@@ -1,8 +1,24 @@
+@import "_common.scss";
+
 .heder-container {
 	width: 1440px;
 	height: 930px;
 	position: relative;
 	overflow: hidden;
+
+	&__left{
+
+	}
+
+	&__right{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		height: 80%;
+		background-color: blue;
+		border-radius: 0px 0px 1000px 0px;
+	}
 
 	&__bg-blue {
 		position: absolute;
