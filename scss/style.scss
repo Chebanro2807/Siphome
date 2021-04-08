@@ -1,27 +1,84 @@
+.heder-container {
+	width: 1440px;
+	height: 930px;
+	position: relative;
+	overflow: hidden;
+
+	&__bg-blue {
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	&__bg-large-picture {
+		position: absolute;
+		top: 230px;
+		right: 30px;
+		z-index: 3;
+	}
+
+	&__bg-small-picture {
+		position: absolute;
+		bottom: 0px;
+		right: -120px;
+		z-index: 3;
+	}
+}
 .header {
-	margin: 0px, 0px, 0px, 0px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: flex;
+	justify-content: space-around;
+	width: 100%;
+	z-index: 5;
+	&__logo {
+	}
+
+	&__nav {
+	}
+
+	&__registration {
+	}
 }
 .logo {
 
-		&__picture {
-			width: 100px;
-		}
+	&__picture {
+	}
 
-		&__text {
-		}
-}
-.nav-wrap {
+	&__text {
+	}
 }
 .nav {
 
-		&__item {
-		}
+	&__item {
+	}
 }
 .registration {
 
-		&__get-startes {
-		}
+	&__get-startes {
+	}
 
-		&__sing-in {
-		}
+	&__sing-in {
+	}
+}
+.main {
+
+	&__title {
+	}
+
+	&__text {
+	}
+
+	&__btns {
+	}
+}
+.btns {
+
+	&__start {
+	}
+
+	&__learn {
+	}
 }
