@@ -66,3 +66,17 @@ select {
     scroll-behavior: auto !important;
   }
 }
+
+button{
+  padding: 0;
+  border: none;
+  font: inherit;
+  color: inherit;
+  background-color: transparent;
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
