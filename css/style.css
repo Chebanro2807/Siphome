@@ -88,7 +88,7 @@ button:focus {
 
 .heder-container {
   width: 100%;
-  height: 930px;
+  height: 1150px;
   position: relative;
   overflow: hidden;
 }
@@ -121,7 +121,7 @@ button:focus {
 
 .heder-container__bg-small-picture {
   position: absolute;
-  bottom: 0px;
+  bottom: 215px;
   right: -120px;
   z-index: 3;
   -webkit-box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
@@ -129,10 +129,17 @@ button:focus {
   border-radius: 24px;
 }
 
+.heder-container__bg-dot-bottom {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+
 .blue-bg {
   position: relative;
   width: 1100px;
   height: 840px;
+  margin-bottom: 175px;
 }
 
 .blue-bg__round {
@@ -348,4 +355,17 @@ button:focus {
   text-align: center;
   color: #FFFFFF;
   cursor: pointer;
+}
+
+.note {
+  margin-left: 120px;
+  width: 960px;
+  height: 96px;
+  font-family: "Inter", sans-serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 160%;
+  letter-spacing: 0.01em;
+  color: #606C84;
 }

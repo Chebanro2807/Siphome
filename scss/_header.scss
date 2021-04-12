@@ -4,7 +4,7 @@ $font: 'Inter', sans-serif;
 
 .heder-container {
 	width: 100%;
-	height: 930px;
+	height: 1150px;
 	position: relative;
 	overflow: hidden;
 
@@ -35,18 +35,25 @@ $font: 'Inter', sans-serif;
 
 	&__bg-small-picture {
 		position: absolute;
-		bottom: 0px;
+		bottom: 215px;
 		right: -120px;
 		z-index: 3;
         box-shadow: 0px 16px 48px rgba(0, 0, 0, 0.16);
         border-radius: 24px;
 	}
+
+    &__bg-dot-bottom{
+        position: absolute;
+        right: 0;
+        bottom: 0;
+    }
 }
 
 .blue-bg{
     position: relative;
     width: 1100px;
     height: 840px;
+    margin-bottom: 175px;
 
     &__round{
         position: absolute;
@@ -223,6 +230,19 @@ $font: 'Inter', sans-serif;
         color: #FFFFFF;
         cursor: pointer;
 	}
+}
+
+.note{
+    margin-left: 120px;
+    width: 960px;
+    height: 96px;
+    font-family: $font;
+    font-style: italic;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    letter-spacing: 0.01em;
+    color: #606C84;
 }
 
 
