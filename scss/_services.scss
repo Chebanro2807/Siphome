@@ -1,0 +1,110 @@
+.services-testimonials-container {
+    height: 2340px;
+    width: 100%;
+    background-image: url(../img/services_img/bg-gradient.svg);
+}
+.services {
+    padding: 93px 160px 180px 160px;
+		&__title {
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 140%;
+            text-align: center;
+            letter-spacing: 0.6em;
+            text-transform: uppercase;
+            color: #1C57C9;
+            margin-bottom: 20px;
+            text-align: center;
+		}
+
+		&__sub-title {
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #262B35;
+            margin-bottom: 24px;
+            text-align: center;
+		}
+
+		&__text {
+            font-family: Inter;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 160%;
+            text-align: center;
+            color: #606C84;
+            margin-bottom: 93px;
+		}
+
+		&__picture-wrap {
+            width: 674px;
+            height: 600px;
+            margin: 0px auto 120px auto;
+		}
+
+		&__picture {
+            width: 674px;
+            height: 600px;
+		}
+
+		&__list-wrap {
+            margin: 0px auto 0px auto;
+            width: 1120px;
+		}
+
+		&__list {
+            display: flex;
+            flex-wrap: wrap;
+		}
+        &__item:nth-child(1){
+            margin: 0px;
+        }
+
+        &__item:nth-child(4){
+            margin: 0px;
+        }
+
+        &__item:nth-child(7){
+            margin: 0px;
+        }
+}
+
+.item {
+    width: 360px;
+    height: 96px;
+    background: #FFFFFF;
+    box-shadow: 0px 6px 48px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+    display: flex;
+    padding: 24px 20px 24px 20px;
+    margin: 0px 0px 20px 20px;
+		&__icon-wrap {
+            width: 55px;
+            height: 55px;
+		}
+
+		&__icon {
+            width: 55px;
+            height: 55px;
+		}
+
+		&__text {
+            font-family: $font;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 24px;
+            color: #262B35;
+            margin-left: 30px;
+            display: flex;
+            align-items: center;
+		}
+}
+
+
