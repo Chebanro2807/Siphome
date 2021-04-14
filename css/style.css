@@ -981,3 +981,35 @@ button:focus {
       -ms-flex-align: center;
           align-items: center;
 }
+
+.testimonials {
+  height: 615px;
+  overflow: hidden;
+  padding: 0px 110px 160px 110px;
+}
+
+.testimonials__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  text-align: center;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  color: #1C57C9;
+  margin-bottom: 17px;
+}
+
+.testimonials__sub-title {
+  width: 540px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #262B35;
+  text-align: center;
+  margin: 0px auto 60px auto;
+}

@@ -1,0 +1,80 @@
+.testimonials {
+		height: 615px;
+		overflow: hidden;
+		padding: 0px 110px 160px 110px;
+
+		&__title {
+			font-family: $font;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 140%;
+			text-align: center;
+			letter-spacing: 0.6em;
+			text-transform: uppercase;
+			color: #1C57C9;
+			margin-bottom: 17px;
+		}
+
+		&__sub-title {
+			width: 540px;
+			font-family: $font;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 42px;
+			line-height: 140%;
+			letter-spacing: -0.02em;
+			color: #262B35;
+			text-align: center;
+			margin: 0px auto 60px auto;
+		}
+
+		&__slider {
+		}
+}
+.slider {
+
+		&__list {
+		}
+
+		&__item {
+		}
+
+		&__item--active {
+		}
+
+		&__indicators {
+
+			&--active {
+			}
+		}
+
+		&__left {
+		}
+
+		&__right {
+		}
+}
+.slide {
+
+		&__icon-wrap {
+		}
+
+		&__icon {
+		}
+
+		&__text {
+		}
+
+		&__person {
+		}
+
+		&__position {
+		}
+
+		&__temples-wrap {
+		}
+
+		&__temples {
+		}
+}
