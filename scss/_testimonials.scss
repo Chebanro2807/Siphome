@@ -1,5 +1,4 @@
 .testimonials {
-		height: 615px;
 		overflow: hidden;
 		padding: 0px 110px 160px 110px;
 
@@ -28,53 +27,126 @@
 			text-align: center;
 			margin: 0px auto 60px auto;
 		}
-
-		&__slider {
-		}
 }
 .slider {
-
+	position: relative;
+	width: 1158px;
+	height: auto;
+	margin: 0 auto;
 		&__list {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
 		}
 
 		&__item {
+			display: none;
+			&--active {
+				display: block;
+			}
 		}
 
-		&__item--active {
+		&__indicators-list{
+			width: 108px;
+			display: flex;
+			justify-content: space-between;
+			margin: 48px auto 0px auto !important;
 		}
 
 		&__indicators {
-
+			width: 12px;
+			height: 12px;
+			left: 666px;
+			top: 5543px;
+			background: #606C84;
+			opacity: 0.2;
+			border-radius: 100%;
 			&--active {
+				background: #1C57C9;
+				opacity: 1;
 			}
 		}
 
 		&__left {
+			position: absolute;
+			top: 46%;
+			left: -28px;
 		}
 
 		&__right {
+			position: absolute;
+			top: 46%;
+			right: -28px;
 		}
 }
 .slide {
+		position: relative;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 540px;
+		background: #FFFFFF;
+		box-shadow: 0px 20px 48px rgba(0, 0, 0, 0.06);
+		border-radius: 24px;
+		padding: 30px;
 
 		&__icon-wrap {
+			position: absolute;
+			right: -15px;
+			top: -15px;
+			width: 74px;
+			height: 74px;
 		}
 
 		&__icon {
+			width: 74px;
+			height: 74px;
 		}
 
 		&__text {
+			width: 420px;
+			font-family: $font;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 160%;
+			color: #262B35;
+			margin-bottom: 42px;
+		}
+
+		&__person-wrap{
+			display: flex;
+			flex-direction: column;
 		}
 
 		&__person {
+			font-family: $font;
+			font-style: normal;
+			font-weight: 600;
+			font-size: 18px;
+			line-height: 24px;
+			color: #262B35;
 		}
 
 		&__position {
+			font-family: $font;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 160%;
+			color: #606C84;
 		}
 
 		&__temples-wrap {
+			position: absolute;
+			bottom: 40px;
+			right: 40px;
+			width: 74px;
+			height: 64px;
 		}
 
 		&__temples {
+			width: 74px;
+			height: 64px;
 		}
 }
