@@ -26,6 +26,7 @@ blockquote,
 dl,
 dd {
   margin: 0;
+  cursor: default;
 }
 
 body {
@@ -1068,13 +1069,13 @@ button:focus {
 
 .slider__left {
   position: absolute;
-  top: 46%;
+  top: 39%;
   left: -28px;
 }
 
 .slider__right {
   position: absolute;
-  top: 46%;
+  top: 39%;
   right: -28px;
 }
 
@@ -1161,4 +1162,392 @@ button:focus {
 .slide__temples {
   width: 74px;
   height: 64px;
+}
+
+.contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 190px 220px;
+}
+
+.contact {
+  width: 425px;
+}
+
+.contact__title {
+  width: 130px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 140%;
+  letter-spacing: 0.6em;
+  text-transform: uppercase;
+  color: #1C57C9;
+  margin-bottom: 17px;
+}
+
+.contact__sub-title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 42px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #262B35;
+  margin-bottom: 42px;
+}
+
+.contact__picture-wrap {
+  width: 412px;
+  height: 362px;
+}
+
+.contact__picture {
+  width: 412px;
+  height: 362px;
+}
+
+.form {
+  width: 420px;
+}
+
+.form__main {
+  margin-bottom: 35px;
+}
+
+.form__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 19px;
+  color: #262B35;
+  margin-bottom: 14px;
+  cursor: default;
+}
+
+.form__input {
+  font-family: "Inter", sans-serif;
+  width: 420px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  padding-left: 20px;
+}
+
+.form__input::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__input:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__input::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__input::placeholder {
+  color: #CCCCCC;
+}
+
+.form__select {
+  font-family: "Inter", sans-serif;
+  width: 420px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 16px;
+  padding: 0px 10px 0px 20px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background: url("../img/contact_img/Vector.svg") no-repeat;
+  background-position: 95% 50%;
+}
+
+.form__option {
+  font-family: "Inter", sans-serif;
+  width: 420px;
+  height: 44px;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  margin-bottom: 16px;
+}
+
+.form__textarea {
+  width: 420px;
+  font-family: "Inter", sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #CCCCCC;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  padding: 10px 0px 0px 20px;
+}
+
+.form__textarea::-webkit-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__textarea:-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__textarea::-ms-input-placeholder {
+  color: #CCCCCC;
+}
+
+.form__textarea::placeholder {
+  color: #CCCCCC;
+}
+
+.form__button {
+  width: 148px;
+  height: 44px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 15px;
+  line-height: 18px;
+  text-align: center;
+  color: #FFFFFF;
+  background: #1ECE7A;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.footer-container {
+  width: 100%;
+}
+
+.footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding: 0px 115px 80px 115px;
+}
+
+.siphome {
+  width: 400px;
+  margin-right: 70px;
+}
+
+.siphome__logo-wrap {
+  width: 158px;
+  height: 42px;
+  margin-bottom: 40px;
+}
+
+.siphome__logo {
+  width: 158px;
+  height: 42px;
+}
+
+.siphome__adress {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #262B35;
+  margin-bottom: 50px;
+}
+
+.siphome__phone {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #262B35;
+}
+
+.siphome__email {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #262B35;
+}
+
+.navigation {
+  width: 240px;
+}
+
+.navigation__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 240%;
+  color: #262B35;
+}
+
+.navigation__item {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 240%;
+  color: #606C84;
+  cursor: pointer;
+}
+
+.navigation__item:hover {
+  color: #1C57C9;
+  font-weight: 600;
+}
+
+.about {
+  width: 220px;
+}
+
+.about__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 240%;
+  color: #262B35;
+}
+
+.about__item {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 240%;
+  color: #606C84;
+  cursor: pointer;
+}
+
+.about__item:hover {
+  color: #1C57C9;
+  font-weight: 600;
+}
+
+.connected {
+  width: 220px;
+}
+
+.connected__title {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 240%;
+  color: #262B35;
+}
+
+.connected__list {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 240%;
+  color: #606C84;
+}
+
+.fasebook {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.fasebook__logo {
+  width: 26px;
+  height: 26px;
+}
+
+.fasebook__text {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.fasebook__text:hover {
+  color: #1C57C9;
+  font-weight: 600;
+}
+
+.twitter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.twitter__logo {
+  width: 26px;
+  height: 26px;
+}
+
+.twitter__text {
+  padding-left: 20px;
+  cursor: pointer;
+}
+
+.twitter__text:hover {
+  color: #1C57C9;
+  font-weight: 600;
+}
+
+.instagram {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.instagram__logo {
+  width: 26px;
+  height: 26px;
+}
+
+.instagram__text {
+  padding-left: 20px;
+}
+
+.instagram__text:hover {
+  color: #1C57C9;
+  font-weight: 600;
+}
+
+.lls {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 150%;
+  color: #606C84;
+  padding: 30px 0px 30px 0px;
+  text-align: center;
 }

@@ -1,0 +1,129 @@
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 190px 220px;
+}
+.contact { 
+        width: 425px;
+		&__title {
+            width: 130px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 140%;
+            letter-spacing: 0.6em;
+            text-transform: uppercase;
+            color: #1C57C9;
+            margin-bottom: 17px;
+		}
+
+		&__sub-title {
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 42px;
+            line-height: 140%;
+            letter-spacing: -0.02em;
+            color: #262B35;
+            margin-bottom: 42px;
+		}
+
+		&__picture-wrap {
+            width: 412px;
+            height: 362px;
+		}
+
+		&__picture {
+            width: 412px;
+            height: 362px;
+		}
+}
+.form {
+        width: 420px;
+
+        &__main{
+            margin-bottom: 35px;
+        }
+
+		&__text {
+            font-family: $font;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 19px;
+            color: #262B35;
+            margin-bottom: 14px;
+            cursor: default;
+		}
+
+		&__input {
+            font-family: $font;
+            width: 420px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 16px;
+            padding-left: 20px;
+            &::placeholder{
+                color: #CCCCCC;
+            }
+		}
+
+        &__select{
+            font-family: $font;
+            width: 420px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 16px;
+            padding: 0px 10px 0px 20px;
+            appearance: none;
+            background: url('../img/contact_img/Vector.svg') no-repeat;
+            background-position: 95% 50%;
+        }
+
+        &__option{
+            font-family: $font;
+            width: 420px;
+            height: 44px;
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            border-radius: 3px;
+            margin-bottom: 16px;
+        }
+
+		&__textarea {
+            width: 420px;
+            font-family: $font;
+            background: #FFFFFF;
+            border: 1px solid #CCCCCC;
+            box-sizing: border-box;
+            border-radius: 3px;
+            padding: 10px 0px 0px 20px;
+            &::placeholder{
+                color: #CCCCCC;
+            }
+		}
+
+		&__button {
+            width: 148px;
+            height: 44px;
+            font-family: $font;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 15px;
+            line-height: 18px;
+            text-align: center;
+            color: #FFFFFF;
+            background: #1ECE7A;
+            border-radius: 3px;
+            cursor: pointer;
+		}
+}
