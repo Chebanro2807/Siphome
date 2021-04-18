@@ -61,6 +61,7 @@
 			background: #606C84;
 			opacity: 0.2;
 			border-radius: 100%;
+			cursor: pointer;
 			&--active {
 				background: #1C57C9;
 				opacity: 1;
@@ -71,12 +72,14 @@
 			position: absolute;
 			top: 39%;
 			left: -28px;
+			cursor: pointer;
 		}
 
 		&__right {
 			position: absolute;
 			top: 39%;
 			right: -28px;
+			cursor: pointer;
 		}
 }
 .slide {

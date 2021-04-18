@@ -1,15 +1,15 @@
 .footer-container {
-    width: 100%;
+      width: 100%;
 }
 .footer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    padding: 0px 115px 80px 115px;
+      display: flex;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0px 115px 80px 115px;
 }
 .siphome {
-        width: 400px;
-        margin-right: 70px;
+      width: 400px;
+      margin-right: 70px;
 		&__logo-wrap {
             width: 158px;
             height: 42px;
@@ -38,6 +38,7 @@
             font-size: 20px;
             line-height: 150%;
             color: #262B35;
+            cursor: pointer;
 		}
 
 		&__email {
@@ -47,10 +48,11 @@
             font-size: 20px;
             line-height: 150%;
             color: #262B35;
+            cursor: pointer;
 		}
 }
 .navigation {
-        width: 240px;
+      width: 240px;
 		&__title {
             font-family: $font;
             font-style: normal;
@@ -69,13 +71,13 @@
             color: #606C84;
             cursor: pointer;
             &:hover{
-                color: #1C57C9;
-                font-weight: 600;
+                  color: #1C57C9;
+                  font-weight: 600;
             }
 		}
 }
 .about {
-        width: 220px;
+      width: 220px;
 		&__title {
             font-family: $font;
             font-style: normal;
@@ -93,14 +95,14 @@
             line-height: 240%;
             color: #606C84;
             cursor: pointer;
-                &:hover{
-                    color: #1C57C9;
-                    font-weight: 600;
-                }
+            &:hover{
+                  color: #1C57C9;
+                  font-weight: 600;
+            }
 		}
 }
 .connected {
-        width: 220px;
+      width: 220px;
 		&__title {
             font-family: $font;
             font-style: normal;

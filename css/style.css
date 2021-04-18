@@ -11,6 +11,11 @@ ol[class] {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 body,
 h1,
 h2,
@@ -184,6 +189,7 @@ button:focus {
   margin-left: 7.6%;
   width: 167px;
   height: 42px;
+  cursor: pointer;
 }
 
 .logo__picture {
@@ -201,7 +207,7 @@ button:focus {
   width: 113px;
   height: 24px;
   color: #fff;
-  cursor: default;
+  cursor: pointer;
 }
 
 .nav-wrap {
@@ -231,6 +237,7 @@ button:focus {
   line-height: 18px;
   opacity: 0.6;
   color: #fff;
+  cursor: pointer;
 }
 
 .nav__item:hover {
@@ -955,6 +962,7 @@ button:focus {
   display: flex;
   padding: 24px 20px 24px 20px;
   margin: 0px 0px 20px 20px;
+  cursor: pointer;
 }
 
 .item__icon-wrap {
@@ -1060,6 +1068,7 @@ button:focus {
   background: #606C84;
   opacity: 0.2;
   border-radius: 100%;
+  cursor: pointer;
 }
 
 .slider__indicators--active {
@@ -1071,12 +1080,14 @@ button:focus {
   position: absolute;
   top: 39%;
   left: -28px;
+  cursor: pointer;
 }
 
 .slider__right {
   position: absolute;
   top: 39%;
   right: -28px;
+  cursor: pointer;
 }
 
 .slide {
@@ -1381,6 +1392,7 @@ button:focus {
   font-size: 20px;
   line-height: 150%;
   color: #262B35;
+  cursor: pointer;
 }
 
 .siphome__email {
@@ -1390,6 +1402,7 @@ button:focus {
   font-size: 20px;
   line-height: 150%;
   color: #262B35;
+  cursor: pointer;
 }
 
 .navigation {
