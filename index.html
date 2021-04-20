@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Siphome</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/burger.js" defer></script>
     <script src="js/lazy_loading.js" defer></script>
     <script src="js/smooth_scrolling.js" defer></script>
+
 </head>
 <body>
     <section class="heder-container" id="home">
@@ -23,20 +25,29 @@
                 <a href="#"><img class="logo__picture" src="" data="img/header_img/shape.svg" alt="logo_img"></a>
                 <p class="logo__text">Siphome</p>
             </div>
-            <nav class="nav-wrap">
-                <ul class="nav">
-                    <li class="nav__item"><a href="#home">Home</a></li>
-                    <li class="nav__item"><a href="#features">Features</a></li>
-                    <li class="nav__item"><a href="#services">Services</a></li>
-                    <li class="nav__item"><a href="#contact">Contact</a></li>
-                    <li class="nav__item"><a href="#">FAQ</a></li>
-                </ul>
-            </nav>
-            <div class="registration">
-                <div class="registration__get-startes">Sign In</div>
-                <svg class="registration__line" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                </svg>
-                <div class="registration__sing-in">Get Started</div>
+            <div class="burger-menu">
+                <div class="burger-menu__top">
+                    <div class="burger-menu__left">Siphome Menu</div>
+                    <div class="burger-menu__right">Close</div>
+                </div>
+                <nav class="nav-wrap">
+                    <ul class="nav">
+                        <li class="nav__item"><a href="#home">Home</a></li>
+                        <li class="nav__item"><a href="#features">Features</a></li>
+                        <li class="nav__item"><a href="#services">Services</a></li>
+                        <li class="nav__item"><a href="#contact">Contact</a></li>
+                        <li class="nav__item"><a href="#">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="registration">
+                    <div class="registration__sing-in">Sign In</div>
+                    <svg class="registration__line" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    </svg>
+                    <div class="registration__get-started">Get Started</div>
+                </div>
+            </div>
+            <div class="mobile-menu">
+                Menu
             </div>
         </div>
         <div class="main">

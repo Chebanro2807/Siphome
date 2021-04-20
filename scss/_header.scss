@@ -81,7 +81,7 @@ $font: 'Inter', sans-serif;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-    margin-left: 7.6%;
+    margin-left: 11%;
 	width: 167px;
 	height: 42px;
     cursor: pointer;
@@ -134,10 +134,10 @@ $font: 'Inter', sans-serif;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 23%;
+    margin-right: 6%;
     width: 180px;
     height: 36px;
-	&__get-startes {
+	&__sing-in {
         padding: 10px 8px 10px 8px;
         font-family: $font;
         font-style: normal;
@@ -148,7 +148,7 @@ $font: 'Inter', sans-serif;
         cursor: pointer;
 	}
 
-	&__sing-in {
+	&__get-started {
         font-family: $font;
         font-style: normal;
         font-weight: 700;
@@ -169,7 +169,6 @@ $font: 'Inter', sans-serif;
     position: absolute;
     left: 119px;
     top: 190px;
-    z-index: 6;
 	&__title {
         width: 600px;
         height: 204px;
@@ -245,6 +244,21 @@ $font: 'Inter', sans-serif;
     line-height: 160%;
     letter-spacing: 0.01em;
     color: #606C84;
+}
+
+.burger-menu{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.mobile-menu{
+    display: none;
+}
+
+.burger-menu__top{
+    display: none;
 }
 
 
