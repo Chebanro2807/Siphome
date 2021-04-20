@@ -1,0 +1,111 @@
+@media screen and (max-width: 1440px){
+    .features-container {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        padding: 90px 72px 0px 72px;
+}
+.fearures {
+    width: 640px;
+		&__title {
+            text-align: center;
+		}
+
+		&__sub-title {
+            text-align: center;
+		}
+
+		&__text {
+            text-align: center;
+            width: 640px;
+		}
+}
+.detection {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+		&__title {
+            text-align: center;
+		}
+
+		&__text {
+            width: 280px;
+            text-align: center;
+		}
+}
+.diagnostics {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            width: 280px;
+        }
+    }
+    .prevention {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+        }
+    }
+    .service {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        &__title {
+            text-align: center;
+        }
+
+        &__text {
+            text-align: center;
+            width: 280px;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .features-container {
+        padding-top: 0px;
+        width: 100%;
+
+        &__picture {
+            margin-bottom: 40px;
+        }
+
+    }
+    .fearures {
+            &__points {
+                align-items: center;
+                width: 682px;
+            }
+    }
+    .detection {
+            width: 331px;
+    }
+    .diagnostics {
+            width: 331px;
+            margin: 0px;
+    }
+    .prevention {
+            width: 331px;
+            margin-top: 36px;
+    }
+    .service {
+            width: 331px;
+            margin: 36px 0px 0px 0px;
+    }
+}

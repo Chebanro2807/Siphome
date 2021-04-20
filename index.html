@@ -4,29 +4,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Siphome</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="js/lazy_loading.js" defer></script>
+    <script src="js/smooth_scrolling.js" defer></script>
 </head>
 <body>
-    <section class="heder-container">
+    <section class="heder-container" id="home">
         <div class="heder-container__left-bg blue-bg">
             <img class="blue-bg__dot" src="img/header_img/dot.svg" alt="">
             <img class="blue-bg__round" src="img/header_img/line-oval.svg" alt="">
         </div>
         <img class="heder-container__bg-large-picture" src="img/header_img/large.png" alt="">
         <img class="heder-container__bg-small-picture" src="img/header_img/small.png" alt="">
-        <img class="heder-container__bg-dot-bottom" src="img/header_img/dot-bottom.svg" alt="">
+        <img class="heder-container__bg-dot-bottom" src="" data="img/header_img/dot-bottom.svg" alt="">
         <div class="header">
             <div class="logo">
-                <a href="#"><img class="logo__picture" src="img/header_img/shape.svg" alt="logo_img"></a>
+                <a href="#"><img class="logo__picture" src="" data="img/header_img/shape.svg" alt="logo_img"></a>
                 <p class="logo__text">Siphome</p>
             </div>
             <nav class="nav-wrap">
                 <ul class="nav">
-                    <li class="nav__item"><a href="#">Home</a></li>
-                    <li class="nav__item"><a href="#">Features</a></li>
-                    <li class="nav__item"><a href="#">Services</a></li>
-                    <li class="nav__item"><a href="#">Contact</a></li>
+                    <li class="nav__item"><a href="#home">Home</a></li>
+                    <li class="nav__item"><a href="#features">Features</a></li>
+                    <li class="nav__item"><a href="#services">Services</a></li>
+                    <li class="nav__item"><a href="#contact">Contact</a></li>
                     <li class="nav__item"><a href="#">FAQ</a></li>
                 </ul>
             </nav>
@@ -54,9 +56,9 @@
         </div>
     </section>
 
-    <section class="features-container">
+    <section class="features-container" id="features">
         <div class="features-container__left">
-            <img class="features-container__picture" src="img/features_img/man.png" alt="man">
+            <img class="features-container__picture" src="" data="img/features_img/man.png" alt="man">
         </div>
         <div class="features-container__right fearures">
             <h1 class="fearures__title">FEATURES</h1>
@@ -65,21 +67,21 @@
             <div class="fearures__points">
                 <div class="detection">
                     <div class="detection__icon-wrap">
-                        <img class="detection__icon" src="img/features_img/automatic-icon.svg" alt="automatic" >
+                        <img class="detection__icon" src="" data="img/features_img/automatic-icon.svg" alt="automatic" >
                     </div>
                     <div class="detection__title">Automatic Threat Detection</div>
                     <div class="detection__text">Siphome reacts the moment your equipment fails, alerting you to the problem </div>
                 </div>
                 <div class="diagnostics">
                     <div class="diagnostics__icon-wrap">
-                        <img class="diagnostics__icon" src="img/features_img/diagnostics-icon.svg" alt="diagnostiv" >
+                        <img class="diagnostics__icon" src="" data="img/features_img/diagnostics-icon.svg" alt="diagnostiv" >
                     </div>
                     <div class="diagnostics__title">Smart Diagnostics</div>
                     <div class="diagnostics__text">See exactly what is malfunctioning and compare your maintenance options on the same screen.</div>
                 </div>
                 <div class="prevention">
                     <div class="prevention__icon-wrap">
-                        <img class="prevention__icon" src="img/features_img/disaster-icon.svg" alt="disaster" >
+                        <img class="prevention__icon" src="" data="img/features_img/disaster-icon.svg" alt="disaster" >
                     </div>
                     <div class="prevention__title">Disaster Prevention</div>
                     <div class="prevention__text">Predictive analytics lets you see what needs maintenance before it fails.
@@ -87,7 +89,7 @@
                 </div>
                 <div class="service">
                     <div class="service__icon-wrap">
-                        <img class="service__icon" src="img/features_img/service-icon.svg" alt="service" >
+                        <img class="service__icon" src="" data="img/features_img/service-icon.svg" alt="service" >
                     </div>
                     <div class="service__title">24/7 Service​</div>
                     <div class="service__text">Siphome monitors your critical systems 24/7 so you can enjoy peace of mind
@@ -96,15 +98,15 @@
             </div>
         </div>
     </section>
-
+<!--
     <section class="update-container">
         <div class="update">
-            <img class="update__small-img" src="img/update_img/update-small.png" alt="small-img">
-            <img class="update__midle-img" src="img/update_img/update-middle.png" alt="midle-img">
-            <img class="update__big-img" src="img/update_img/update-big.png" alt="big-img">
-            <img class="update__midle-dot" src="img/update_img/midle-dot.svg" alt="midle-dot">
-            <img class="update__bottom-dot" src="img/update_img/bottom-dot.svg" alt="bottom-dot">
-            <img class="update__blue-dot" src="img/update_img/blue-dot.svg" alt="blue-dot">
+            <img class="update__small-img" src="" data="img/update_img/update-small.png" alt="small-img">
+            <img class="update__midle-img" src="" data="img/update_img/update-middle.png" alt="midle-img">
+            <img class="update__big-img" src="" data="img/update_img/update-big.png" alt="big-img">
+            <img class="update__midle-dot" src="" data="img/update_img/midle-dot.svg" alt="midle-dot">
+            <img class="update__bottom-dot" src="" data="img/update_img/bottom-dot.svg" alt="bottom-dot">
+            <img class="update__blue-dot" src="" data="img/update_img/blue-dot.svg" alt="blue-dot">
             <div class="update__left">
                 <h1 class="update__title">UPDATE</h1>
                 <h2 class="update__sub-title">It starts with an upgrade</h2>
@@ -112,7 +114,7 @@
             <div class="update__right">
                 <div class="monitor">
                     <div class="monitor__picture-wrap">
-                        <img class="monitor__picture" src="img/update_img/monitor-icon.svg" alt="monitor" >
+                        <img class="monitor__picture" src="" data="img/update_img/monitor-icon.svg" alt="monitor" >
                     </div>
                     <div class="monitor__info">
                         <div class="monitor__title">Monitor</div>
@@ -121,7 +123,7 @@
                 </div>
                 <div class="maintenance">
                     <div class="maintenance__picture-wrap">
-                        <img class="maintenance__picture" src="img/update_img/maintenance-icon.svg" alt="maintenance">
+                        <img class="maintenance__picture" src="" data="img/update_img/maintenance-icon.svg" alt="maintenance">
                     </div>
                     <div class="maintenance__info">
                         <div class="maintenance__title">Maintenance</div>
@@ -130,7 +132,7 @@
                 </div>
                 <div class="repair">
                     <div class="repair__picture-wrap">
-                        <img class="repair__picture" src="img/update_img/repair-icon.svg" alt="repair">
+                        <img class="repair__picture" src="" data="img/update_img/repair-icon.svg" alt="repair">
                     </div>
                     <div class="repair__info">
                         <div class="repair__title">Repair</div>
@@ -139,7 +141,7 @@
                 </div>
                 <div class="replace">
                     <div class="replace__picture-wrap">
-                        <img class="replace__picture" src="img/update_img/replace-icon.svg" alt="replace">
+                        <img class="replace__picture" src="" data="img/update_img/replace-icon.svg" alt="replace">
                     </div>
                     <div class="replace__info">
                         <div class="replace__title">Replace</div>
@@ -151,83 +153,83 @@
     </section>
 
     <section class="services-testimonials-container"> 
-        <div class="services">
+        <section class="services" id="services">
             <h1 class="services__title">SERVICES</h1>
             <h2 class="services__sub-title">Bring more systems into the network</h2>
             <div class="services__text">Find out just how far Siphome can lead your home into next-gen intelligence.</div>
             <div class="services__picture-wrap">
-                <img class="services__picture" src="img/services_img/home.png" alt="home">
+                <img class="services__picture" src="" data="img/services_img/home.png" alt="home">
             </div>
             <div class="services__list-wrap">
                 <ul class="services__list">
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/command.svg" alt="command">
+                            <img class="item__icon" src="" data="img/services_img/icon/command.svg" alt="command">
                         </div>
                         <div class="item__text">Mobile Command
                             Management</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/equipment.svg" alt="equipment">
+                            <img class="item__icon" src="" data="img/services_img/icon/equipment.svg" alt="equipment">
                         </div>
                         <div class="item__text">Equipment Optimizer</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/lifecycle.svg" alt="lifecycle">
+                            <img class="item__icon" src="" data="img/services_img/icon/lifecycle.svg" alt="lifecycle">
                         </div>
                         <div class="item__text">Lifecycle Prediction</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/troubleshooting.svg" alt="troubleshooting">
+                            <img class="item__icon" src="" data="img/services_img/icon/troubleshooting.svg" alt="troubleshooting">
                         </div>
                         <div class="item__text">Troubleshooting Guide</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/energy.svg" alt="energy">
+                            <img class="item__icon" src="" data="img/services_img/icon/energy.svg" alt="energy">
                         </div>
                         <div class="item__text">Energy Optimizer</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/diagnostics.svg" alt="diagnostics">
+                            <img class="item__icon" src="" data="img/services_img/icon/diagnostics.svg" alt="diagnostics">
                         </div>
                         <div class="item__text">Smart Diagnostics</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/scan.svg" alt="scan">
+                            <img class="item__icon" src="" data="img/services_img/icon/scan.svg" alt="scan">
                         </div>
                         <div class="item__text">Vital Equipment Scan</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/alerts.svg" alt="alerts">
+                            <img class="item__icon" src="" data="img/services_img/icon/alerts.svg" alt="alerts">
                         </div>
                         <div class="item__text">Smart Alerts</div>
                     </li>
                     <li class="services__item item">
                         <div class="item__icon-wrap">
-                            <img class="item__icon" src="img/services_img/icon/maintenance.svg" alt="maintenance">
+                            <img class="item__icon" src="" data="img/services_img/icon/maintenance.svg" alt="maintenance">
                         </div>
                         <div class="item__text">Preventative 
                             Maintenance</div>
                     </li>
                 </ul>
             </div>
-        </div>
+        </section>
 
-        <div class="testimonials">
+        <section class="testimonials" id="testimonials">
             <h1 class="testimonials__title">Testimonials</h1>
             <h2 class="testimonials__sub-title">Let’s see what people says about Siphome</h2>
             <div class="slider">
-                <ul class="slider__list">
-                    <li class="slider__item slide slider__item--active">
+                <div class="slider__list">
+                    <div class="slider__item slide">
                         <div class="slide__icon-wrap">
-                            <img class="slide__icon" src="img/testimonials_img/ryan.png" alt="ryan">
+                            <img class="slide__icon" src="" data="img/testimonials_img/ryan.png" alt="ryan">
                         </div>
                         <div class="slide__text">“We have been waiting on this product and now that we have installed a few. We think it will make the industry by storm.”
                         </div>
@@ -236,12 +238,12 @@
                             <div class="slide__position">Design Manager Kiluna</div>
                         </div>
                         <div class="slide__temples-wrap">
-                            <img class="slide__temples" src="img/testimonials_img/temples.png" alt="temples">
+                            <img class="slide__temples" src="" data="img/testimonials_img/temples.png" alt="temples">
                         </div>
-                    </li>
-                    <li class="slider__item slide slider__item--active">
+                    </div>
+                    <div class="slider__item slide">
                         <div class="slide__icon-wrap">
-                            <img class="slide__icon" src="img/testimonials_img/gladina.png" alt="gladina">
+                            <img class="slide__icon" src="" data="img/testimonials_img/gladina.png" alt="gladina">
                         </div>
                         <div class="slide__text">“Thank you for introducing me to Siphome!  We like how the system gives updates to us and the homeowner as well to give us a real time update on how everything is <br> working.
                         </div>
@@ -250,52 +252,52 @@
                             <div class="slide__position">CEO JobDesk United, LLC</div>
                         </div>
                         <div class="slide__temples-wrap">
-                            <img class="slide__temples" src="img/testimonials_img/temples.png" alt="temples">
+                            <img class="slide__temples" src="" data="img/testimonials_img/temples.png" alt="temples">
                         </div>
-                    </li>
-                    <!-- <li class="slider__item slide">
+                    </div>
+                    <div class="slider__item slide">
                         <div class="slide__icon-wrap">
-                            <img class="slide__icon" src="img/testimonials_img/gladina.png" alt="gladina">
+                            <img class="slide__icon" src="" data="img/testimonials_img/gladina.png" alt="gladina">
                         </div>
                         <div class="slide__text">TEST</div>
                         <div class="slide__person">TEST</div>
                         <div class="slide__position">TEST</div>
                         <div class="slide__temples-wrap">
-                            <img class="slide__temples" src="img/testimonials_img/temples.png" alt="temples">
+                            <img class="slide__temples" src="" data="img/testimonials_img/temples.png" alt="temples">
                         </div>
-                    </li>
-                    <li class="slider__item slide">
+                    </div>
+                    <div class="slider__item slide">
                         <div class="slide__icon-wrap">
-                            <img class="slide__icon" src="img/testimonials_img/gladina.png" alt="gladina">
+                            <img class="slide__icon" src="" data="img/testimonials_img/gladina.png" alt="gladina">
                         </div>
                         <div class="slide__text">TEST</div>
                         <div class="slide__person">TEST</div>
                         <div class="slide__position">TEST</div>
                         <div class="slide__temples-wrap">
-                            <img class="slide__temples" src="img/testimonials_img/temples.png" alt="temples">
+                            <img class="slide__temples" src="" data="img/testimonials_img/temples.png" alt="temples">
                         </div>
-                    </li> -->
-                </ul>
+                    </div>
+                </div>
                 <ol class="slider__indicators-list">
                     <li class="slider__indicators slider__indicators--active"></li>
                     <li class="slider__indicators"></li>
                     <li class="slider__indicators"></li>
                     <li class="slider__indicators"></li>
                 </ol>
-                <img class="slider__left" src="img/testimonials_img/left.png" alt="">
-                <img class="slider__right" src="img/testimonials_img/right.png" alt="">
+                <img class="slider__left" src="" data="img/testimonials_img/left.png" alt="">
+                <img class="slider__right" src="" data="img/testimonials_img/right.png" alt="">
             </div>
-        </div>
+        </section>
     </section>
 
-    <section class="contact-container">
+    <section class="contact-container" id="contact">
         <div class="contact">
             <h1 class="contact__title">Contact</h1>
             <h2 class="contact__sub-title">Skip logging in, 
                 get what you need 
                 with a few key details</h2>
             <div class="contact__picture-wrap">
-                <img class="contact__picture" src="img/contact_img/illustration.png" alt="illustration">
+                <img class="contact__picture" src="" data="img/contact_img/illustration.png" alt="illustration">
             </div>
         </div>
         <div class="form">
@@ -326,7 +328,7 @@
         <div class="footer">
             <div class="siphome">
                 <div class="siphome__logo-wrap">
-                    <img class="siphome__logo" src="img/footer_img/logo.svg" alt="logo">
+                    <img class="siphome__logo" src="" data="img/footer_img/logo.svg" alt="logo">
                 </div>
                 <div class="siphome__adress"><strong>Siphome, LLC</strong>
                     The New Building 2320  Lang Avenue, <br>
@@ -340,10 +342,10 @@
             <div class="navigation">
                 <div class="navigation__title">Navigation</div>
                 <ul class="navigation__list">
-                    <li class="navigation__item"><a href="#">Home</a></li>
-                    <li class="navigation__item"><a href="#">Features</a></li>
-                    <li class="navigation__item"><a href="#">Services</a></li>
-                    <li class="navigation__item"><a href="#">Testimonials</a></li>
+                    <li class="navigation__item"><a href="#home">Home</a></li>
+                    <li class="navigation__item"><a href="#features">Features</a></li>
+                    <li class="navigation__item"><a href="#services">Services</a></li>
+                    <li class="navigation__item"><a href="#testimonials">Testimonials</a></li>
                     <li class="navigation__item"><a href="#">We Care</a></li>
                     <li class="navigation__item"><a href="#">Idea Exchange</a></li>
                 </ul>
@@ -351,7 +353,7 @@
             <div class="about">
                 <div class="about__title">About</div>
                 <ul class="about__list">
-                    <li class="about__item"><a href="#">Contact Us</a></li>
+                    <li class="about__item"><a href="#contact">Contact Us</a></li>
                     <li class="about__item"><a href="#">Privacy & Policy</a></li>
                     <li class="about__item"><a href="#">Terms & Conditions</a></li>
                     <li class="about__item"><a href="#">FAQ</a></li>
@@ -361,21 +363,21 @@
                 <div class="connected__title">Stay Connected</div>
                 <ul class="connected__list">
                     <li class="fasebook">
-                        <img class="fasebook__logo" src="img/footer_img/ico-fb.svg" alt="fb">
+                        <img class="fasebook__logo" src="" data="img/footer_img/ico-fb.svg" alt="fb">
                         <div class="fasebook__text"><a href="#">Facebook</a></div>
                     </li>
                     <li class="twitter">
-                        <img class="twitter__logo" src="img/footer_img/ic-twitter.svg" alt="twitter">
+                        <img class="twitter__logo" src="" data="img/footer_img/ic-twitter.svg" alt="twitter">
                         <div class="twitter__text"><a href="#">Twitter</a></div>
                     </li>
                     <li class="instagram">
-                        <img class="instagram__logo" src="img/footer_img/ic-instagram.svg" alt="instagram" >
+                        <img class="instagram__logo" src="" data="img/footer_img/ic-instagram.svg" alt="instagram" >
                         <div class="instagram__text"><a href="#">Instagram</a></div>
                     </li>
                 </ul>
             </div>
         </div>
         <div class="lls">Copyright© 2020. Siphome Smart home LLC. </div>
-    </section>
+    </section> -->
 </body>
 </html>

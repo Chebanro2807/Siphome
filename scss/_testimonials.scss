@@ -1,6 +1,6 @@
 .testimonials {
 		overflow: hidden;
-		padding: 0px 110px 160px 110px;
+		padding: 180px 110px 160px 110px;
 
 		&__title {
 			font-family: $font;
@@ -39,12 +39,6 @@
 			align-items: center;
 		}
 
-		&__item {
-			display: none;
-			&--active {
-				display: block;
-			}
-		}
 
 		&__indicators-list{
 			width: 108px;
