@@ -707,7 +707,6 @@ section {
   top: 30px;
   left: 155px;
   width: 320px;
-  height: 115px;
 }
 
 .monitor {
@@ -2171,5 +2170,44 @@ section {
   }
   .service__text {
     width: 260px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .update-container {
+    width: 100%;
+    height: 2000px;
+  }
+  .update {
+    margin-top: 160px;
+  }
+  .update__small-img {
+    left: 45px;
+  }
+  .update__big-img {
+    left: 45px;
+    top: 200px;
+  }
+  .update__midle-dot {
+    display: none;
+  }
+  .update__bottom-dot {
+    display: none;
+  }
+  .update__left {
+    left: 0px;
+    width: 100%;
+    text-align: center;
+  }
+  .update__sub-title {
+    width: 440px;
+    margin: 0 auto;
+  }
+  .update__right {
+    background-color: gold;
+    background-image: none;
+    width: 100%;
+    top: 700px;
+    left: 0px;
   }
 }

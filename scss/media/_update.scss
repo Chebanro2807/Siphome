@@ -1,0 +1,122 @@
+@media screen and (max-width: 1440px){
+        .update-container {
+                width: 100%;
+                height: 2000px;
+        }
+        .update {
+                margin-top: 160px;
+                        &__small-img {
+                                left: 45px;
+                        }
+        
+                        &__midle-img {
+                        }
+        
+                        &__big-img {
+                                left: 45px;
+                                top: 200px;
+                        }
+        
+                        &__midle-dot {
+                                display: none;
+                        }
+        
+                        &__bottom-dot {
+                                display: none;
+                        }
+        
+                        &__blue-dot {
+                        }
+        
+                        &__left {
+                                left: 0px;
+                                width: 100%;
+                                text-align: center;
+                        }
+        
+                        &__title {
+                        }
+        
+                        &__sub-title {
+                                width: 440px;
+                                margin: 0 auto;
+                        }
+        
+                        &__right {
+                                background-color: gold;
+                                background-image: none;
+                                width: 100%;
+                                top: 700px;
+                                left: 0px;
+                        }
+        }
+        .monitor {
+        
+                        &__picture-wrap {
+                        }
+        
+                        &__picture {
+                        }
+        
+                        &__info {
+                        }
+        
+                        &__title {
+                        }
+        
+                        &__text {
+                        }
+        }
+        .maintenance {
+        
+                        &__picture-wrap {
+                        }
+        
+                        &__picture {
+                        }
+        
+                        &__info {
+                        }
+        
+                        &__title {
+                        }
+        
+                        &__text {
+                        }
+        }
+        .repair {
+        
+                        &__picture-wrap {
+                        }
+        
+                        &__picture {
+                        }
+        
+                        &__info {
+                        }
+        
+                        &__title {
+                        }
+        
+                        &__text {
+                        }
+        }
+        .replace {
+        
+                        &__picture-wrap {
+                        }
+        
+                        &__picture {
+                        }
+        
+                        &__info {
+                        }
+        
+                        &__title {
+                        }
+        
+                        &__text {
+                        }
+        }
+        
+}
