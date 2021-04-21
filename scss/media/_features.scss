@@ -84,6 +84,7 @@
 
         &__picture {
             margin-bottom: 40px;
+            z-index: 100;
         }
 
     }
@@ -108,4 +109,65 @@
             width: 331px;
             margin: 36px 0px 0px 0px;
     }
+}
+
+@media screen and (max-width: 768px){
+    .features-container {
+        padding: 0px;
+
+		&__picture {
+            width: 320px;
+            height: 320px;
+		}
+
+		&__right {
+            width: 100%;
+		}
+}
+.fearures {
+		&__sub-title {
+            font-size: 32px;
+            line-height: 140%;
+		}
+
+		&__text {
+            width: 92%;
+            margin: 0px auto 50px auto;
+		}
+
+		&__points {
+            width: 100%;
+            flex-wrap: nowrap;
+            flex-direction: column;
+		}
+}
+.detection {
+    width: 260px;
+
+		&__text {
+            width: 260px;
+		}
+}
+.diagnostics {
+    width: 260px;
+
+		&__text {
+            width: 260px;
+		}
+}
+.prevention {
+    width: 260px;
+
+		&__text {
+            width: 260px;
+		}
+}
+.service {
+    width: 260px;
+
+		&__text {
+            width: 260px;
+		}
+}
+
 }

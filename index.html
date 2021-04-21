@@ -19,7 +19,10 @@
         </div>
         <img class="heder-container__bg-large-picture" src="img/header_img/large.png" alt="">
         <img class="heder-container__bg-small-picture" src="img/header_img/small.png" alt="">
-        <img class="heder-container__bg-dot-bottom" src="" data="img/header_img/dot-bottom.svg" alt="">
+        <picture>
+            <source srcset="img/header_img/dot-mobile.png" media="(max-width: 1024px)">
+            <img class="heder-container__bg-dot-bottom" src="" data="img/header_img/dot-bottom.svg" alt="">
+        </picture>
         <div class="header">
             <div class="logo">
                 <a href="#"><img class="logo__picture" src="" data="img/header_img/shape.svg" alt="logo_img"></a>
@@ -69,7 +72,10 @@
 
     <section class="features-container" id="features">
         <div class="features-container__left">
-            <img class="features-container__picture" src="" data="img/features_img/man.png" alt="man">
+            <picture>
+                <source srcset="img/features_img/illustation-mobile.png" media="(max-width: 768px)">
+                <img class="features-container__picture" src="" data="img/features_img/man.png" alt="man">
+            </picture>
         </div>
         <div class="features-container__right fearures">
             <h1 class="fearures__title">FEATURES</h1>
