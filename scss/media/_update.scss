@@ -1,20 +1,24 @@
 @media screen and (max-width: 1440px){
         .update-container {
                 width: 100%;
-                height: 2000px;
+                height: 1942px;
         }
         .update {
                 margin-top: 160px;
                         &__small-img {
                                 left: 45px;
+                                top: 260px;
+                                border-radius: 24px;
                         }
         
                         &__midle-img {
+                                top: 320px;
+                                left: 420px;
                         }
         
                         &__big-img {
                                 left: 45px;
-                                top: 200px;
+                                top: 540px;
                         }
         
                         &__midle-dot {
@@ -26,6 +30,7 @@
                         }
         
                         &__blue-dot {
+                                bottom: 167px;
                         }
         
                         &__left {
@@ -34,89 +39,159 @@
                                 text-align: center;
                         }
         
-                        &__title {
-                        }
-        
                         &__sub-title {
                                 width: 440px;
                                 margin: 0 auto;
                         }
         
                         &__right {
-                                background-color: gold;
+                                display: grid;
+                                grid-template-columns: 1fr 1fr;
+                                grid-auto-rows: 300px;
+                                background: #1C57C9;
                                 background-image: none;
                                 width: 100%;
-                                top: 700px;
+                                height: 1104px;
+                                top: 680px;
                                 left: 0px;
+                                padding: 320px 76px 0px 76px;
+                                border-radius: 0px 0px 0px 300px;
                         }
         }
         .monitor {
-        
+                flex-direction: column;
+                margin: 0px auto;
+                padding: 0px;
+                width: 331px;
+                height: auto;
                         &__picture-wrap {
+                                width: 60px;
+                                height: 60px;
+                                margin: 0px auto 30px auto;
                         }
         
                         &__picture {
+                                width: 60px;
+                                height: 60px;
                         }
         
                         &__info {
+                                width: 100%;
+                                margin: 0px;
                         }
         
                         &__title {
+                                text-align: center;
+                                width: 100%;
                         }
         
                         &__text {
+                                text-align: center;
+                                width: 280px;
+                                margin: 0px auto;
                         }
         }
         .maintenance {
-        
-                        &__picture-wrap {
-                        }
-        
-                        &__picture {
-                        }
-        
-                        &__info {
-                        }
-        
-                        &__title {
-                        }
-        
-                        &__text {
-                        }
+                flex-direction: column;
+                padding: 0px;
+                margin: 0px auto;
+                width: 331px;
+                height: auto;
+                &__picture-wrap {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0px auto 30px auto;
+                }
+
+                &__picture {
+                        width: 60px;
+                        height: 60px;
+                }
+
+                &__info {
+                        width: 100%;
+                        margin: 0px;
+                }
+
+                &__title {
+                        text-align: center;
+                        width: 100%;
+                }
+
+                &__text {
+                        text-align: center;
+                        width: 280px;
+                        margin: 0px auto;
+                }
         }
         .repair {
-        
-                        &__picture-wrap {
-                        }
-        
-                        &__picture {
-                        }
-        
-                        &__info {
-                        }
-        
-                        &__title {
-                        }
-        
-                        &__text {
-                        }
+                flex-direction: column;
+                padding: 0px;
+                margin: 25px auto 0px auto;
+                width: 331px;
+                height: auto;
+                &__picture-wrap {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0px auto 30px auto;
+                }
+
+                &__picture {
+                        width: 60px;
+                        height: 60px;
+                }
+
+                &__info {
+                        width: 100%;
+                        margin: 0px;
+                }
+
+                &__title {
+                        text-align: center;
+                        width: 100%;
+                }
+
+                &__text {
+                        text-align: center;
+                        width: 280px;
+                        margin: 0px auto;
+                }
         }
         .replace {
-        
-                        &__picture-wrap {
-                        }
-        
-                        &__picture {
-                        }
-        
-                        &__info {
-                        }
-        
-                        &__title {
-                        }
-        
-                        &__text {
-                        }
+                flex-direction: column;
+                padding: 0px;
+                margin: 25px auto 0px auto;
+                width: 331px;
+                height: auto;
+                &__picture-wrap {
+                        width: 60px;
+                        height: 60px;
+                        margin: 0px auto 30px auto;
+                }
+
+                &__picture {
+                        width: 60px;
+                        height: 60px;
+                }
+
+                &__info {
+                        width: 100%;
+                        margin: 0px;
+                }
+
+                &__title {
+                        text-align: center;
+                        width: 100%;
+                }
+
+                &__text {
+                        text-align: center;
+                        width: 280px;
+                        margin: 0px auto;
+                }
         }
-        
+}
+
+@media screen and (max-width: 1024px){
+
 }
