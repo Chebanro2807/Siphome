@@ -192,6 +192,66 @@
         }
 }
 
-@media screen and (max-width: 1024px){
-
+@media screen and (max-width: 768px){
+        .update-container {
+                height: 2281px;
+        }
+        .update {
+                        &__small-img {
+                                left: -3px;
+                                border-radius: 0px 30px 30px 0px;
+                                width: 168px;
+                                height: 135px;
+                        }
+        
+                        &__midle-img {
+                                right: -3px;
+                                left: auto;
+                                top: 305px;
+                                border-radius: 30px 0px 0px 30px;
+                        }
+        
+                        &__big-img {
+                                left: -3px;
+                                top: 420px;
+                        }
+        
+                        &__blue-dot {
+                                display: none;
+                        }
+        
+                        &__sub-title {
+                                width: 320px;
+                                font-size: 32px;
+                        }
+        
+                        &__right {
+                                top: 495px;
+                                display: flex;
+                                flex-direction: column;
+                                align-items: center;
+                                height: 1620px;
+                                padding: 260px 0px 0px 0px;
+                                border-radius: 0px 0px 0px 150px;
+                        }
+        }
+        .monitor {
+                width: 100%;
+                height: 300px;
+                        &__info {
+                                height: auto;
+                        }
+        }
+        .maintenance {
+                height: 308px;
+        }
+        .replace {
+                height: 300px;
+                margin:  0px;
+        }
+        .repair {
+                height: 300px;
+                margin:  0px;
+        }
+        
 }

@@ -1374,6 +1374,15 @@ section {
   padding: 0px 115px 80px 115px;
 }
 
+.footer__nav-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .siphome {
   width: 400px;
   margin-right: 70px;
@@ -2355,5 +2364,188 @@ section {
     text-align: center;
     width: 280px;
     margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .update-container {
+    height: 2281px;
+  }
+  .update__small-img {
+    left: -3px;
+    border-radius: 0px 30px 30px 0px;
+    width: 168px;
+    height: 135px;
+  }
+  .update__midle-img {
+    right: -3px;
+    left: auto;
+    top: 305px;
+    border-radius: 30px 0px 0px 30px;
+  }
+  .update__big-img {
+    left: -3px;
+    top: 420px;
+  }
+  .update__blue-dot {
+    display: none;
+  }
+  .update__sub-title {
+    width: 320px;
+    font-size: 32px;
+  }
+  .update__right {
+    top: 495px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 1620px;
+    padding: 260px 0px 0px 0px;
+    border-radius: 0px 0px 0px 150px;
+  }
+  .monitor {
+    width: 100%;
+    height: 300px;
+  }
+  .monitor__info {
+    height: auto;
+  }
+  .maintenance {
+    height: 308px;
+  }
+  .replace {
+    height: 300px;
+    margin: 0px;
+  }
+  .repair {
+    height: 300px;
+    margin: 0px;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .footer-container {
+    width: 100%;
+    height: 855px;
+  }
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0px 80px 40px 80px;
+  }
+  .siphome {
+    width: 480px;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .siphome__logo-wrap {
+    margin-bottom: 50px;
+  }
+  .siphome__adress {
+    margin-bottom: 40px;
+  }
+  .siphome__email {
+    margin-bottom: 75px;
+  }
+  .navigation {
+    width: 220px;
+  }
+  .about {
+    width: 220px;
+  }
+  .connected {
+    width: 220px;
+  }
+  .lls {
+    padding: 0px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .footer {
+    padding: 0px 0px 40px 60px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    padding: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .footer__nav-wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .siphome {
+    margin: 0px;
+    width: 320px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .siphome__adress {
+    text-align: center;
+    width: 320px;
+  }
+  .navigation {
+    margin-bottom: 70px;
+  }
+  .about {
+    margin-bottom: 100px;
+  }
+  .connected {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-bottom: 115px;
+  }
+  .connected__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .lls {
+    width: 226px;
+    font-size: 18px;
+    margin: 0px auto;
+    padding: 20px 0px;
   }
 }
