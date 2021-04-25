@@ -98,7 +98,7 @@ section {
 }
 
 .heder-container {
-  width: 1440px;
+  width: 1420px;
   height: 1150px;
   position: relative;
   overflow: hidden;
@@ -410,6 +410,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: 1420px;
   padding: 90px 180px 185px 70px;
 }
 
@@ -612,7 +613,7 @@ section {
 }
 
 .update-container {
-  width: 1440px;
+  width: 1420px;
   height: 1170px;
   overflow: hidden;
 }
@@ -892,12 +893,13 @@ section {
 
 .services-testimonials-container {
   height: 2340px;
-  width: 100%;
+  width: 1420px;
   background-image: url(../img/services_img/bg-gradient.svg);
 }
 
 .services {
-  padding: 93px 160px 0px 160px;
+  padding: 93px 0px 0px 0px;
+  width: 1420px;
 }
 
 .services__title {
@@ -1016,7 +1018,9 @@ section {
 
 .testimonials {
   overflow: hidden;
-  padding: 180px 110px 160px 110px;
+  padding: 180px 0px 140px 0px;
+  width: 1420px;
+  position: relative;
 }
 
 .testimonials__title {
@@ -1050,6 +1054,7 @@ section {
   width: 1158px;
   height: auto;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .slider__list {
@@ -1062,6 +1067,8 @@ section {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .slider__indicators-list {
@@ -1083,7 +1090,6 @@ section {
   background: #606C84;
   opacity: 0.2;
   border-radius: 100%;
-  cursor: pointer;
 }
 
 .slider__indicators--active {
@@ -1093,15 +1099,15 @@ section {
 
 .slider__left {
   position: absolute;
-  top: 39%;
-  left: -28px;
+  top: 59%;
+  left: 135px;
   cursor: pointer;
 }
 
 .slider__right {
   position: absolute;
-  top: 39%;
-  right: -28px;
+  top: 57%;
+  right: 135px;
   cursor: pointer;
 }
 
@@ -1190,6 +1196,19 @@ section {
   height: 64px;
 }
 
+.item-js {
+  height: 339px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .contact-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1197,7 +1216,7 @@ section {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1440px;
+  width: 1420px;
   padding: 190px 220px;
 }
 
@@ -1357,7 +1376,7 @@ section {
 }
 
 .footer-container {
-  width: 1440px;
+  width: 1420px;
 }
 
 .footer {

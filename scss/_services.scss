@@ -1,10 +1,11 @@
 .services-testimonials-container {
     height: 2340px;
-    width: 100%;
+    width: 1420px;
     background-image: url(../img/services_img/bg-gradient.svg);
 }
 .services {
-    padding: 93px 160px 0px 160px;
+    padding: 93px 0px 0px 0px;
+    width: 1420px;
 		&__title {
             font-family: $font;
             font-style: normal;

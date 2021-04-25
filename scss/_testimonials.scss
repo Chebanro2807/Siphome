@@ -1,6 +1,8 @@
 .testimonials {
 		overflow: hidden;
-		padding: 180px 110px 160px 110px;
+		padding: 180px 0px 140px 0px;
+		width: 1420px;
+		position: relative;
 
 		&__title {
 			font-family: $font;
@@ -33,10 +35,12 @@
 	width: 1158px;
 	height: auto;
 	margin: 0 auto;
+	overflow: hidden;
 		&__list {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			transition: .5s;
 		}
 
 
@@ -55,7 +59,6 @@
 			background: #606C84;
 			opacity: 0.2;
 			border-radius: 100%;
-			cursor: pointer;
 			&--active {
 				background: #1C57C9;
 				opacity: 1;
@@ -64,15 +67,15 @@
 
 		&__left {
 			position: absolute;
-			top: 39%;
-			left: -28px;
+			top: 59%;
+			left: 135px;
 			cursor: pointer;
 		}
 
 		&__right {
 			position: absolute;
-			top: 39%;
-			right: -28px;
+			top: 57%;
+			right: 135px;
 			cursor: pointer;
 		}
 }
@@ -146,4 +149,11 @@
 			width: 74px;
 			height: 64px;
 		}
+}
+
+.item-js{
+	height: 339px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
