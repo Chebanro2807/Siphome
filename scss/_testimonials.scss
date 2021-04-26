@@ -59,6 +59,7 @@
 			background: #606C84;
 			opacity: 0.2;
 			border-radius: 100%;
+			cursor: pointer;
 			&--active {
 				background: #1C57C9;
 				opacity: 1;
@@ -156,4 +157,8 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+
+#li-mobile{
+	display: none;
 }

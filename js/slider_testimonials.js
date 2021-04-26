@@ -3,6 +3,7 @@ class Slider {
         this.position = 0;
         this.slidesToShow = 2;
         this.slidesToScroll = 1;
+        this._stop = false;
 
         this.container = document.querySelector('.slider');
         this.track = document.querySelector('.slider__list');
@@ -20,8 +21,25 @@ class Slider {
             item.style.minWidth = `${this.itemWidth}px`;
         });
 
-        this.btnNext.addEventListener('click', this.nextSlide.bind(this));
-        this.btnPrev.addEventListener('click', this.prevSlide.bind(this));
+        this.btnNext.addEventListener('click', this.userClick.bind(this, this.nextSlide.bind(this)));
+        this.btnPrev.addEventListener('click', this.userClick.bind(this, this.prevSlide.bind(this)));
+
+        this.dots.forEach(dot => {
+            dot.addEventListener('click', this.userClick.bind(this, this.dotsToSlider.bind(this, dot)))
+        });
+        this.checkContainerWidth();
+        this.showNextAfter(2000);
+    }
+
+    userClick(func){
+        this._stop = true;
+        func();
+    }
+
+    showNextAfter(ms) {
+        return delay(ms)
+            .then(() => (!this._stop) ? this.nextSlide() : false)
+            .then(() =>  (!this._stop) ? this.showNextAfter(ms) : false);
     }
 
     nextSlide() {
@@ -47,36 +65,56 @@ class Slider {
 
     chooseDot() {
         if (this.position === 0) {
-            this.deleteDot(this.dots[1]);
-            this.deleteDot(this.dots[2]);
-            this.deleteDot(this.dots[3]);
+            this.deleteDot();
             this.dots[0].classList.add('slider__indicators--active');
         }
         if (this.position === -this.itemWidth) {
-            this.deleteDot(this.dots[0]);
-            this.deleteDot(this.dots[2]);
-            this.deleteDot(this.dots[3]);
+            this.deleteDot();
             this.dots[1].classList.add('slider__indicators--active');
         }
         if (this.position === -this.itemWidth*2) {
-            this.deleteDot(this.dots[0]);
-            this.deleteDot(this.dots[1]);
-            this.deleteDot(this.dots[3]);
+            this.deleteDot();
             this.dots[2].classList.add('slider__indicators--active');
         }
         if (this.position === -this.itemWidth*3) {
-            this.deleteDot(this.dots[0]);
-            this.deleteDot(this.dots[1]);
-            this.deleteDot(this.dots[2]);
+            this.deleteDot();
             this.dots[3].classList.add('slider__indicators--active');
+        }
+        if (this.position === -this.itemWidth*4) {
+            this.deleteDot();
+            this.dots[4].classList.add('slider__indicators--active');
         }
     }
 
-    deleteDot(dot) {
-        dot.classList.remove('slider__indicators--active');
+    deleteDot() {
+        this.dots.forEach(dot => {
+            dot.classList.remove('slider__indicators--active');
+        });
+    }
+
+    dotsToSlider(dot) {
+        let index = dot.getAttribute('data-index');
+        this.position = -(index * this.itemWidth);
+        this.setPosition();
+    }
+
+    checkContainerWidth() {
+        if (this.container.clientWidth < 1000){
+            this.slidesToShow = 1;
+            this.itemWidth = this.container.clientWidth / this.slidesToShow;
+            this.items.forEach((item) => {
+                item.style.minWidth = `${this.itemWidth}px`;
+            });
+            this.movePosition = this.slidesToScroll * this.itemWidth;
+        }
     }
 }
 
+function delay(ms) {
+    return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+    });
+}
 
 //!
 new Slider();

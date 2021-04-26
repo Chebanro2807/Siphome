@@ -10,7 +10,8 @@
     <script src="js/burger.js" defer></script>
     <script src="js/lazy_loading.js" defer></script>
     <script src="js/smooth_scrolling.js" defer></script>
-    <script src="js/slider.js" defer></script>
+    <script src="js/slider_testimonials.js" defer></script>
+    <script src="js/slider_services.js" defer></script>
 
 </head>
 <body>
@@ -188,7 +189,10 @@
             <h2 class="services__sub-title">Bring more systems into the network</h2>
             <div class="services__text">Find out just how far Siphome can lead your home into next-gen intelligence.</div>
             <div class="services__picture-wrap">
-                <img class="services__picture" src="" data="img/services_img/home.webp" alt="home">
+                <picture>
+                    <source srcset="img/services_img/home-mobile.svg" media="(max-width: 786px)">
+                    <img class="services__picture" src="" data="img/services_img/home.webp" alt="home">
+                </picture>
             </div>
             <div class="services__list-wrap">
                 <ul class="services__list">
@@ -249,6 +253,17 @@
                             Maintenance</div>
                     </li>
                 </ul>
+                <ul class="services-li">
+                    <li data-index="0" class="services-li__item services-li__item--active"></li>
+                    <li data-index="1" class="services-li__item"></li>
+                    <li data-index="2" class="services-li__item"></li>
+                    <li data-index="3" class="services-li__item"></li>
+                    <li data-index="4" class="services-li__item"></li>
+                    <li data-index="5" class="services-li__item"></li>
+                    <li data-index="6" class="services-li__item"></li>
+                    <li data-index="7" class="services-li__item"></li>
+                    <li data-index="8" class="services-li__item"></li>
+                </ul>
             </div>
         </section>
 
@@ -278,7 +293,7 @@
                             <div class="slide__icon-wrap">
                                 <img class="slide__icon" src="" data="img/testimonials_img/gladina.webp" alt="gladina">
                             </div>
-                            <div class="slide__text">“Thank you for introducing me to Siphome!  We like how the system gives updates to us and the homeowner as well to give us a real time update on how everything is <br> working.
+                            <div class="slide__text">“Thank you for introducing me to Siphome!  We like how the system gives updates to us and the homeowner as well to give us a real time update on how everything is working.
                             </div>
                             <div class="slide__person-wrap">
                                 <div class="slide__person">Gladina Samantha</div>
@@ -330,10 +345,11 @@
                     </div>
                 </div>
                 <ol class="slider__indicators-list">
-                    <li class="slider__indicators slider__indicators--active"></li>
-                    <li class="slider__indicators"></li>
-                    <li class="slider__indicators"></li>
-                    <li class="slider__indicators"></li>
+                    <li data-index="0"  class="slider__indicators slider__indicators--active"></li>
+                    <li data-index="1" class="slider__indicators"></li>
+                    <li data-index="2" class="slider__indicators"></li>
+                    <li data-index="3" class="slider__indicators"></li>
+                    <li id="li-mobile" data-index="4" class="slider__indicators"></li>
                 </ol>
             </div>
             <img class="slider__left" src="" data="img/testimonials_img/left.webp" alt="">
