@@ -4,6 +4,7 @@ class Slider {
         this.slidesToShow = 2;
         this.slidesToScroll = 1;
         this._stop = false;
+        this._start = false;
 
         this.container = document.querySelector('.slider');
         this.track = document.querySelector('.slider__list');
@@ -99,14 +100,18 @@ class Slider {
     }
 
     checkContainerWidth() {
-        if (this.container.clientWidth < 1000){
+        if (this.container.clientWidth < 1158){
+        
             this.slidesToShow = 1;
-            this.itemWidth = this.container.clientWidth / this.slidesToShow;
-            this.items.forEach((item) => {
-                item.style.minWidth = `${this.itemWidth}px`;
-            });
-            this.movePosition = this.slidesToScroll * this.itemWidth;
+        } else {
+            this.slidesToShow = 2;
         }
+        this.itemWidth = this.container.clientWidth / this.slidesToShow;
+        this.items.forEach((item) => {
+            item.style.minWidth = `${this.itemWidth}px`;
+        });
+        this.movePosition = this.slidesToScroll * this.itemWidth;    
+
     }
 }
 
@@ -116,5 +121,5 @@ function delay(ms) {
     });
 }
 
-//!
-new Slider();
+
+

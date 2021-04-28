@@ -4,6 +4,7 @@ class SliderSer {
         this.position = 0;
         this.slidesToShow = 1;
         this.slidesToScroll = 1;
+        this._start = true;
 
         this.container = document.querySelector('.services__list-wrap');
         this.track = document.querySelector('.services__list');
@@ -52,9 +53,11 @@ class SliderSer {
     }
 
     chooseDot() {
-
         this.deleteDot();
-        let index = Math.abs(this.position / (this.itemWidth +10));
+        let index = +Math.floor(Math.abs(this.position / (this.itemWidth +10)));
+        if (isNaN(index)){
+            index = 0;
+        }
         this.dots[index].classList.add('services-li__item--active');
     }
 
@@ -68,16 +71,27 @@ class SliderSer {
         let index = dot.getAttribute('data-index');
         this.position = -(index * this.itemWidth + index*10);
         this.setPosition();
+    }
 
+    stopSlider() {
+        this.items.forEach((item) => {
+            item.style.minWidth = `360px`;
+        });
+        this.track.style.transform = `translateX(0px)`;
+        this.movePosition = 0;
     }
 
     checkContainerWidth() {
-        if (this.container.clientWidth < 1000){
+        console.log(this.container.clientWidth)
+        if (this.container.clientWidth < 381){
             this.slidesToShow = 1;
             this.sliderMath();
+            this.nextSlide();
+
+        } else {
+            this.stopSlider();
         }
     }
-
 }
 
 function delay(ms) {
@@ -85,6 +99,3 @@ function delay(ms) {
         setTimeout(resolve, ms);
     });
 }
-
-//!
-new SliderSer();

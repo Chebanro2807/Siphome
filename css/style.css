@@ -1020,6 +1020,14 @@ section {
   display: none;
 }
 
+.mobile-services__list-wrap {
+  display: none;
+}
+
+.laptop-services__list-wrap {
+  display: none;
+}
+
 .testimonials {
   overflow: hidden;
   padding: 180px 0px 140px 0px;
@@ -2458,6 +2466,7 @@ section {
 @media screen and (max-width: 1440px) {
   .services-testimonials-container {
     width: 100%;
+    height: 2210px;
   }
   .services {
     width: 100%;
@@ -2528,6 +2537,9 @@ section {
 }
 
 @media screen and (max-width: 768px) {
+  .services-testimonials-container {
+    height: 1940px;
+  }
   .services__sub-title {
     width: 320px;
     font-size: 32px;
@@ -2599,6 +2611,9 @@ section {
   }
   .slide__person-wrap {
     text-align: center;
+  }
+  .slider__indicators-list {
+    margin: 110px auto 0px auto !important;
   }
 }
 
