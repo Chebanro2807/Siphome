@@ -4,8 +4,8 @@ class SliderSer {
         this.position = 0;
         this.slidesToShow = 1;
         this.slidesToScroll = 1;
-        this._start = true;
 
+        this.body = document.querySelector('.body');
         this.container = document.querySelector('.services__list-wrap');
         this.track = document.querySelector('.services__list');
         this.items = document.querySelectorAll('.services__item');
@@ -15,14 +15,22 @@ class SliderSer {
             dot.addEventListener('click', this.userClick.bind(this, this.dotsToSlider.bind(this, dot)))
         });
         this.checkContainerWidth();
+        this.sliderMath();
         this.showNextAfter(2000);
     }
 
     sliderMath() {
         this.itemsCount = this.items.length;
-        this.itemWidth = this.container.clientWidth / this.slidesToShow;
+        if (this.body.clientWidth < 425) {
+            this.itemWidth = 320;
+        } else {
+            this.itemWidth = 380;
+        }
         this.movePosition = this.slidesToScroll * this.itemWidth + 10;
-
+        console.log(this.movePosition + " movePosition")
+        console.log(this.itemsCount + " itemsCount");
+        console.log(this.itemWidth + " itemWidth");
+        console.log(this.container.clientWidth + " container.clientWidth");
         this.items.forEach((item) => {
             item.style.minWidth = `${this.itemWidth}px`;
         });
@@ -38,10 +46,16 @@ class SliderSer {
         func();
     }
 
+    delay(ms) {
+        return new Promise((resolve) => {
+            setTimeout(resolve, ms);
+        });
+    }
+
     showNextAfter(ms) {
-        return delay(ms)
+        return this.delay(ms)
             .then(() => (!this._stop) ? this.nextSlide() : false)
-            .then(() =>  (!this._stop) ? this.showNextAfter(ms) : false);
+            .then(() => (!this._stop) ? this.showNextAfter(ms) : false)
     }
 
     setPosition() {
@@ -82,20 +96,16 @@ class SliderSer {
     }
 
     checkContainerWidth() {
-        console.log(this.container.clientWidth)
-        if (this.container.clientWidth < 381){
+        if (this.body.clientWidth < 1420) {
+            if (this._stop) {
+                this.showNextAfter(2000);
+                this._stop = false;
+            }
             this.slidesToShow = 1;
             this.sliderMath();
-            this.nextSlide();
-
         } else {
             this.stopSlider();
+            this._stop = true;
         }
     }
-}
-
-function delay(ms) {
-    return new Promise((resolve) => {
-        setTimeout(resolve, ms);
-    });
 }
