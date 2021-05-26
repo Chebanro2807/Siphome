@@ -1622,6 +1622,157 @@ section {
   text-align: center;
 }
 
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 20;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.modal__cross {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.modal-g {
+  width: 400px;
+  height: 400px;
+  background-color: #FFFFFF;
+}
+
+.modal-g__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.modal-g__button {
+  color: #FFFFFF;
+  background: #1ECE7A;
+  border-radius: 3px;
+  padding: 10px 8px 10px 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.modal-s {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px;
+  width: 400px;
+  height: 275px;
+  background-color: #FFFFFF;
+}
+
+.modal-s__link {
+  color: #1ECE7A;
+  cursor: pointer;
+}
+
+.modal-s__main-text {
+  margin-top: 10px;
+  text-align: center;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 20px;
+}
+
+.modal-s__text {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 16px;
+  margin-top: 20px;
+  text-align: center;
+  color: #606C84;
+}
+
+.modal-s__item {
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  width: 90%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0px auto;
+  margin-top: 20px;
+}
+
+.modal-s__item input {
+  width: 200px;
+}
+
+.modal-s__button {
+  width: 100px;
+  margin-top: 20px;
+  color: #FFFFFF;
+  background: #1ECE7A;
+  border-radius: 3px;
+  padding: 10px 8px 10px 8px;
+  font-family: "Inter", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 16px;
+  cursor: pointer;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: 0.3s all;
+  transition: 0.3s all;
+}
+
+.is-show {
+  opacity: 1;
+  visibility: visible;
+}
+
 @media screen and (max-width: 1440px) {
   .heder-container {
     width: 100%;

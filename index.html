@@ -12,8 +12,8 @@
     <script src="js/smooth_scrolling.js" defer></script>
     <script src="js/slider_testimonials.js" defer></script>
     <script src="js/slider_services.js" defer></script>
+    <script src="js/modal.js" defer></script>
     <script src="js/app.js" defer></script>
-
 </head>
 <body class="body">
     <section class="heder-container" id="home">
@@ -47,10 +47,10 @@
                     </ul>
                 </nav>
                 <div class="registration">
-                    <div class="registration__sing-in">Sign In</div>
+                    <div class="registration__sing-in js-open-modal" data-modal="sign_in">Sign In</div>
                     <svg class="registration__line" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
                     </svg>
-                    <div class="registration__get-started">Get Started</div>
+                    <div class="registration__get-started js-open-modal" data-modal="get_started">Get Started</div>
                 </div>
             </div>
             <div class="mobile-menu">
@@ -65,7 +65,7 @@
                 Turn your home into a smarthome today with a simple & affordable upgrade Discover the upgrade that automates home maintenance.
             </div>
             <div class="btns">
-                <button class="btns__start">Get Started</button>
+                <button class="btns__start js-open-modal" data-modal="get_started">Get Started</button>
                 <button class="btns__learn">Learn More</button>
             </div>
         </div>
@@ -454,5 +454,49 @@
         </div>
         <div class="lls">Copyright© 2020. Siphome Smart home LLC. </div>
     </section>
+
+    <div class="modal js-modal" data-modal="sign_in">
+        <div class="modal-s">
+            <p class="modal-s__main-text">Sign In</p>
+            <p class="modal-s__text">New user? <a class="modal-s__link js-open-modal" data-modal="get_started">Create an account</a></p>
+            <div class="modal-s__item">
+                <p>Login</p>
+                <input type="text">
+            </div>
+            <div class="modal-s__item">
+                <p>Password</p>
+                <input type="text">
+            </div>
+            <button class="modal-s__button">Sign In</button>
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        </div>
+    </div>
+
+    <div class="modal js-modal" data-modal="get_started">
+        <div class="modal-g">
+            <p class="modal-g__main-text">Create an account</p>
+            <p>Already have an account? <a class="modal-g__link js-open-modal" data-modal="sign_in">Sign In</a></p>
+            <div class="modal-g__item">
+                <p>Login</p>
+                <input type="text">
+            </div>
+            <div class="modal-g__item">
+                <p>Email</p>
+                <input type="text">
+            </div>
+            <div class="modal-g__item">
+                <p>Password</p>
+                <input type="text">
+            </div>
+            <div class="modal-g__item">
+                <p>Email</p>
+                <input type="checkbox">
+            </div>
+            <button class="modal-g__button">Get Started</button>
+            <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z"/></svg>
+        </div>
+    </div>
+
+    <div class="overlay js-modal-overlay"></div>
 </body>
 </html>

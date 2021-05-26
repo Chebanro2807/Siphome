@@ -26,11 +26,10 @@ class SliderSer {
         } else {
             this.itemWidth = 380;
         }
+        if (this.body.clientWidth > 1420) {
+            this.itemWidth = 360;
+        }
         this.movePosition = this.slidesToScroll * this.itemWidth + 10;
-        console.log(this.movePosition + " movePosition")
-        console.log(this.itemsCount + " itemsCount");
-        console.log(this.itemWidth + " itemWidth");
-        console.log(this.container.clientWidth + " container.clientWidth");
         this.items.forEach((item) => {
             item.style.minWidth = `${this.itemWidth}px`;
         });
@@ -103,6 +102,7 @@ class SliderSer {
             }
             this.slidesToShow = 1;
             this.sliderMath();
+            this.position = 0;
         } else {
             this.stopSlider();
             this._stop = true;

@@ -1,0 +1,133 @@
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: 20;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+
+    &__cross {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+    }
+}
+
+.modal-g {
+    width: 400px;
+    height: 400px;
+    background-color: #FFFFFF;
+
+    &__main-text {
+
+    }
+
+    &__item {
+        display: flex;
+    }
+
+    &__button {
+        color: #FFFFFF;
+        background: #1ECE7A;
+        border-radius: 3px;
+        padding: 10px 8px 10px 8px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+}
+
+.modal-s {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 400px;
+    height: 275px;
+    background-color: #FFFFFF;
+
+    &__link{
+        color: #1ECE7A;
+        cursor: pointer;
+    }
+
+    &__main-text {
+        margin-top: 10px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    &__text {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+        text-align: center;
+        color: #606C84;
+    }
+
+    &__item {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        width: 90%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: 20px;
+        input {
+            width: 200px;
+        }
+    }
+
+    &__button {
+        width: 100px;
+        margin-top: 20px;
+        color: #FFFFFF;
+        background: #1ECE7A;
+        border-radius: 3px;
+        padding: 10px 8px 10px 8px;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        cursor: pointer;
+    }
+}
+
+.overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 10;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s all;
+}
+
+.is-show{
+    opacity: 1;
+    visibility: visible;
+}
