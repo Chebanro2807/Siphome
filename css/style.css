@@ -1716,6 +1716,7 @@ section {
 }
 
 .modal-s__item {
+  position: relative;
   font-family: "Inter", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -1735,8 +1736,17 @@ section {
   margin-top: 20px;
 }
 
-.modal-s__item input {
+.modal-s__input {
   width: 200px;
+  outline: none;
+  background: none;
+  display: block;
+  border: 0px;
+  border-bottom: 1.5px solid rgba(0, 0, 0, 0.2);
+}
+
+.modal-s__input:focus {
+  border-bottom: 1.5px solid #1ECE7A;
 }
 
 .modal-s__button {
