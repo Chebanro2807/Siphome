@@ -19,19 +19,69 @@
 }
 
 .modal-g {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
     width: 400px;
-    height: 400px;
+    height: 350px;
     background-color: #FFFFFF;
 
-    &__main-text {
+    &__link{
+        color: #1ECE7A;
+        cursor: pointer;
+    }
 
+    &__main-text {
+        margin-top: 10px;
+        text-align: center;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 20px;
+    }
+
+    &__text {
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 20px;
+        text-align: center;
+        color: #606C84;
     }
 
     &__item {
+        position: relative;
+        font-family: "Inter", sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 16px;
+        width: 90%;
         display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 0px auto;
+        margin-top: 20px;
+    }
+    &__input {
+        width: 200px;
+        outline:none;
+        background: none;
+        display: block;
+        border: 0px;
+        border-bottom: 1.5px solid rgba(0, 0, 0, .2);
+        &:focus {
+            border-bottom: 1.5px solid #1ECE7A;
+        }
     }
 
     &__button {
+        margin-top: 20px;
         color: #FFFFFF;
         background: #1ECE7A;
         border-radius: 3px;
@@ -39,7 +89,7 @@
         font-family: "Inter", sans-serif;
         font-style: normal;
         font-weight: 700;
-        font-size: 13px;
+        font-size: 18px;
         line-height: 16px;
         cursor: pointer;
     }
@@ -61,7 +111,7 @@
     }
 
     &__main-text {
-        margin-top: 10px;
+        margin-top: 50px;
         text-align: center;
         font-family: "Inter", sans-serif;
         font-style: normal;
