@@ -100,7 +100,7 @@
 }
 
 .burger-menu {
-      position: fixed;
+      position: absolute;
       top: 0px;
       left: 0px;
       width: 100%;
@@ -152,7 +152,7 @@
 
 .burger_wrap {
       display: block;
-      position: fixed;
+      position: absolute;
       top: 0px;
       right: 0px;
       width: 100%;
@@ -177,7 +177,7 @@
       height: 110px;
       justify-content: space-between;
       padding: 0px 30px;
-      position: fixed;
+      position: absolute;
       top: 0px;
       background: #1C57C9;
 }

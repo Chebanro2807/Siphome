@@ -110,7 +110,7 @@ section {
   left: 0;
   width: 76.39%;
   height: 80%;
-  background-image: url(../img/header_img/background-blue.svg);
+  background-image: url(img/header_img/background-blue.svg);
 }
 
 .heder-container__bg-blue {
@@ -1943,7 +1943,7 @@ section {
     display: none;
   }
   .burger-menu {
-    position: fixed;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
@@ -2015,7 +2015,7 @@ section {
   }
   .burger_wrap {
     display: block;
-    position: fixed;
+    position: absolute;
     top: 0px;
     right: 0px;
     width: 100%;
@@ -2039,7 +2039,7 @@ section {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0px 30px;
-    position: fixed;
+    position: absolute;
     top: 0px;
     background: #1C57C9;
   }
