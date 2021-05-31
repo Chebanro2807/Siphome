@@ -22,5 +22,3 @@ class Nav {
         this._menu.classList.remove('menu__wrapper--open');
     }
 }
-
-new Nav();

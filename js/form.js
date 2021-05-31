@@ -71,9 +71,4 @@ FormSubmit.prototype.validateInput = function(inputField) {
         return false;
     }
     return true;
-
 }
-
-//!
-
-const submit = new FormSubmit(document.querySelector("#sendForm"));

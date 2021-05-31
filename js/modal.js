@@ -39,7 +39,3 @@ class Modal {
         });
     }
 }
-
-new Modal();
-
-

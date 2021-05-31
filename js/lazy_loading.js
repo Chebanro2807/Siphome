@@ -24,5 +24,3 @@ class LL {
         });
     }
 }
-
-new LL();
